@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa; /* security background */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.secure-component {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.security-alert {
+  padding: 1rem;
+  border-left: 4px solid #1890ff;
+  background: #e6f7ff;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* Error Boundary Styles */
+.secure-error-boundary {
+  padding: 2rem;
+  background: #fff3f3;
+  border: 1px solid #ffcccc;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2rem;
+}
+
+.retry-button {
+  background: #1890ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.retry-button:hover {
+  background: #096dd9;
+}
+
+/* Map Loading State */
+.secure-map-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: rgba(245, 245, 245, 0.8);
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.encrypted-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #1890ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Secure Table Enhancements */
+.secure-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin: 1rem 0;
+}
+
+.secure-table th {
+  background: #fafafa;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.secure-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-badge.In-Transit {
+  background: #e6fffb;
+  color: #08979c;
+}
+
+.status-badge.Delayed {
+  background: #fff1f0;
+  color: #cf1322;
+}
