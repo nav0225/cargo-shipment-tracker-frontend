@@ -71,7 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ---
 
-```markdown
 # Cargo Shipment Tracker - Frontend
 
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
@@ -137,7 +136,7 @@ A production-grade cargo shipment tracking system with real-time monitoring capa
    yarn start
    ```
 
-## Configuration 🔧
+## Configuration
 Create a `.env` file in the root directory with the following variables:
 
 ```env
